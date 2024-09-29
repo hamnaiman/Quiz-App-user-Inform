@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    background-image: url(images/bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+form {
+    color: #88ccf1;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c0c0c0;
+    transition: color 0.3s ease-in-out;
+}
+
+input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #00aeff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.5);
+}
+
+input[type="submit"], .btn-primary {
+    background-color: #00aeff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover, .btn-primary:hover {
+    background-color: #007bb5;
+    box-shadow: 0 4px 12px rgba(0, 123, 181, 0.6);
+}
+
+a {
+    color: #00aeff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #007bb5;
+    text-decoration: underline;
+}
+
+p {
+    color: #c0c0c0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+/* login form stylying */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field Styling */
+.form-control {
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change to your preferred color */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Change to match the border color */
+}
+
+/* Button Styling */
+.btn-primary {
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade of the button color */
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    cursor: pointer;
+    color: #007bff;
+}
